@@ -1,7 +1,7 @@
-                                                        ARTIFICIAL INTELLIGENCE LABORATORY
-                                                  (Effective from the academic year 2018 -2019)
-                                                                  SEMESTER – V
-                                                    Subject Code 18AIL57 CIE Marks 40
+ARTIFICIAL INTELLIGENCE LABORATORY                                                  
+(Effective from the academic year 2018 -2019)                                                                  
+SEMESTER – V
+Subject Code 18AIL57 CIE Marks 40
 
 Programs List:
 
@@ -21,12 +21,19 @@ keys(),values(),items()
 
 
 AI Problems to be implemented in Python
-1 Implement and Demonstrate Depth First Search Algorithm on Water Jug Problem
-2 Implement and Demonstrate Best First Search Algorithm on any AI problem
+1 Implement and Demonstrate Depth First Search Algorithm on Water Jug Problem.
+
+2 Implement and Demonstrate Best First Search Algorithm on any AI problem.
+
 3 Implement AO* Search algorithm.
-4 Solve 8-Queens Problem with suitable assumptions
+
+4 Solve 8-Queens Problem with suitable assumptions.
+
 5 Implementation of TSP using heuristic approach
+
 6 Implementation of the problem solving strategies: either using Forward Chaining or
 Backward Chaining
+
 7 Implement resolution principle on FOPL related problems
+
 8 Implement any Game and demonstrate the Game playing strategies
