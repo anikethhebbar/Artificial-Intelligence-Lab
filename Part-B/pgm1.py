@@ -1,3 +1,4 @@
+#Implement and Demonstrate Depth First Search Algorithm on Water Jug Problem
 class WaterJug:
     def __init__(self, m, n):
         self.m = m # capacity of jug 1
