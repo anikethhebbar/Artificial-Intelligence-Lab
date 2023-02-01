@@ -1,4 +1,4 @@
-ARTIFICIAL INTELLIGENCE LABORATORY                                                  
+ARTIFICIAL INTELLIGENCE LABORATORY  - 18AIL57                                                
 (Effective from the academic year 2018 -2019)                                                                  
 SEMESTER – V
 Subject Code 18AIL57 CIE Marks 40
@@ -21,6 +21,7 @@ keys(),values(),items()
 
 
 AI Problems to be implemented in Python
+
 1 Implement and Demonstrate Depth First Search Algorithm on Water Jug Problem.
 
 2 Implement and Demonstrate Best First Search Algorithm on any AI problem.

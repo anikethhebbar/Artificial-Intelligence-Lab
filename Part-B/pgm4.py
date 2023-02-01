@@ -1,41 +1,36 @@
-# This program solves the 8-Queens problem using backtracking
-# The 8-Queens problem is to place 8 queens on an 8x8 chessboard such that no two queens attack each other
+# Taking number of queens as input from user
+N=int(input("ENTER THE NUMBER OF QUEENS:"))
 
-input="Enter the number of queens: "
-n = int(input)  # get the number of queens from the user
-board = [[0]*n for _ in range(n)]  # create an empty chessboard with n rows and n columns
+# here we create a chessboard
+# NxN matrix with all elements set to 0
+board = [[0]*N for _ in range(N)]
 
-# Check if a queen placed at i, j is under attack from any other queen
-def attack (i, j):
-    # Check horizontally
-    for k in range(0,n):
-        if board [i][k]==1 or board[k][j]==1:
+def attack(i, j):
+    #checking vertically and horizontally
+    for k in range(0,N):
+        if board[i][k]==1 or board[k][j]==1:
             return True
-    # Check diagonally
-    for k in range (0,n):
-        for l in range(0, n):
-            if (k+l==i+j) or (k-1==i-j):
+    #checking diagonally
+    for k in range(0,N):
+        for l in range(0,N):
+            if (k+l==i+j) or (k-l==i-j):
                 if board[k][l]==1:
                     return True
-    # If no queen is attacking, return False
     return False
 
-# Solve the n-Queens problem using backtracking
-def n_queens(a):
-    if a==0:  # base case: if all queens are placed, return True
+def N_queens(n):
+    if n==0:
         return True
-    for i in range(0,n):
-        for j in range(0, n):
-            if(not(attack(i,j))) and (board [i][j]!=1):  # if this position is not under attack and not already occupied by a queen
-                board[i][j]=1  # place a queen here
-                if n_queens(a-1)==True:  # move to the next queen
+    for i in range(0,N):
+        for j in range(0,N):
+            if (not(attack(i,j))) and (board[i][j]!=1):
+                board[i][j] = 1
+                if N_queens(n-1)==True:
                     return True
-                board[i][j]=0  # if placing a queen here does not lead to a solution, backtrack and try another position
-        return False
+                board[i][j] = 0
 
-# Call the n_queens function with n as the argument
-n_queens(n)
+    return False
 
-# Print the final solution
+N_queens(N)
 for i in board:
-    print(i)
+    print (i)

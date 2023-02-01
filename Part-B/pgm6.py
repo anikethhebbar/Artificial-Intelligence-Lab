@@ -35,5 +35,5 @@ def find_related_facts(starting_facts, all_facts):
 
 
 # Example usage
-result = find_related_facts(['sing', 'canary'], facts)
+result = find_related_facts(['croaks', 'frogs'], facts)
 print(result)
